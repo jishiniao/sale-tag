@@ -1,23 +1,28 @@
-import printMe from './print.js'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-function component() {
-  const element = document.createElement('div')
-  element.innerHTML = 'Hello world'
+import Tag from '../src/index'
 
-  const btn = document.createElement('button')
-  btn.innerHTML = 'click me and check the console!'
-  btn.onclick = printMe
-  element.appendChild(btn)
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+  }
 
-  return element
+  render() {
+    return (
+      <div>
+        <Tag />
+      </div>
+    )
+  }
+
 }
 
-document.getElementById('root').appendChild(component())
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+)
 
 if (module.hot) {
-  // module.hot.accept('./print.js', function() {
-  //   console.log('Accepting the updated printMe module!')
-  //   printMe()
-  // })
   module.hot.accept()
 }

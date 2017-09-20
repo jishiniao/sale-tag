@@ -7,8 +7,7 @@ const hotMiddlewareClient = 'webpack-hot-middleware/client'
 
 module.exports = {
   entry: {
-    app:[path.resolve(__dirname, '../examples/index.js'), hotMiddlewareClient],
-    print:[path.resolve(__dirname, '../examples/print.js'), hotMiddlewareClient]
+    app:[path.resolve(__dirname, '../examples/index.js'), hotMiddlewareClient]
   },
   devtool: 'inline-source-map',
   // devServer: {
@@ -28,5 +27,22 @@ module.exports = {
     filename: '[name]bundle.js',
     path: path.resolve(__dirname, '../build'),
     publicPath: '/'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              'env',
+              "stage-0"
+            ]
+          }
+        }
+      }
+    ]
   }
 }
