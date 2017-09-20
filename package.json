@@ -2,8 +2,20 @@
   "name": "sale-tag",
   "version": "1.0.0",
   "description": "use it, make sure support css3 transform",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "repository": "git@github.com:jishiniao/sale-tag.git",
   "author": "yangkang",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev:server": "node dev-server.js"
+  },
+  "devDependencies": {
+    "express": "^4.15.4",
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.6.0",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-dev-server": "^2.8.2",
+    "webpack-hot-middleware": "^2.19.1",
+    "webpack-manifest-plugin": "^1.3.2"
+  }
 }
