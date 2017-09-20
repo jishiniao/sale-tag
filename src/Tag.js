@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Area from './Area'
+
 export default class Tag extends React.Component {
   static propTypes = {
     text: PropTypes.string.isRequired,
@@ -13,7 +15,10 @@ export default class Tag extends React.Component {
   render() {
     const { text } = this.props
     return (
-      <div>{text}</div>
+      <div>
+        <div>{text}</div>
+        <Area />
+      </div>
     )
   }
 }
