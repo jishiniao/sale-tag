@@ -1,15 +1,11 @@
 {
   "name": "sale-tag",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "description": "use it, make sure support css3 transform",
   "main": "./lib/index.js",
   "repository": "git@github.com:jishiniao/sale-tag.git",
   "author": "yangkang",
   "license": "MIT",
-  "files": [
-    "lib",
-    "assets/*.css"
-  ],
   "scripts": {
     "dev:server": "node dev-server.js",
     "lib:clean": "rm ./lib/*",
@@ -20,6 +16,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-react-css-modules": "^3.3.0",
     "babel-plugin-styled-components": "^1.2.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
