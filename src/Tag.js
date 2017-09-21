@@ -29,19 +29,25 @@ export default class Tag extends React.Component {
     width: PropTypes.string,
     height: PropTypes.string,
     style: PropTypes.object,
+    disable: PropTypes.bool,
   }
 
   static defaultProps = {
     text: '7 折',
     width: '85px',
     height: '55px',
+    disable: true,
   }
 
   render() {
-    const { text, width, height, style } = this.props
+    const { text, width, height, style, disable } = this.props
 
     styles.area.width = width
     styles.area.height = height
+
+    if(disable) {
+      styles.discount.backgroundColor = '#DDD'
+    }
 
     return (
       <div style={styles.area}>
