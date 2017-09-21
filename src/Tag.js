@@ -1,23 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Area from './Area'
+import './style.css'
 
 export default class Tag extends React.Component {
   static propTypes = {
     text: PropTypes.string.isRequired,
+    size: PropTypes.object,
+    style: PropTypes.object,
   }
 
   static defaultProps = {
-    text: '7折',
+    text: '7 折',
+    size: {
+      width: '85px',
+      height: '55px',
+    }
   }
 
   render() {
-    const { text } = this.props
+    const { text, size, style } = this.props
+
     return (
-      <div>
-        <div>{text}</div>
-        <Area />
+      <div className={'area'} style={size}>
+        <div className={'discount'} style={style}>{text}</div>
       </div>
     )
   }

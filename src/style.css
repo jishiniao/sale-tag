@@ -1,0 +1,17 @@
+.area {
+  position: absolute;
+  overflow: hidden;
+}
+.discount {
+  position: absolute;
+  right: -20px;
+  top:10px;
+  background-color: #427AFB;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFF;
+  width: 100%;
+  transform:rotate(40deg);
+  font-size: 1em;
+}
