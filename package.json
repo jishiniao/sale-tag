@@ -8,6 +8,8 @@
   "license": "MIT",
   "scripts": {
     "dev:server": "node dev-server.js",
+    "lib:clean": "rm ./lib/*",
+    "lib:cpcss": "cp ./src/style.css ./lib/.",
     "prepare": "babel src -d lib"
   },
   "devDependencies": {
