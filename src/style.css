@@ -1,5 +1,7 @@
 .area {
   position: absolute;
+  right:-1px;
+  top: -1px;
   overflow: hidden;
 }
 .discount {

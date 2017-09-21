@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 // import '../src/style.css'
-import Tag, { TagStyle } from '../lib/index'
+import Tag, { TagStyle } from '../src/index'
 
 class App extends React.Component {
   constructor(props) {
