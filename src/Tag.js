@@ -1,7 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-// import './style.css'
+const styles = {
+  area: {
+    position: 'absolute',
+    right:'-1px',
+    top: '-1px',
+    overflow: 'hidden',
+  },
+  discount: {
+    position: 'absolute',
+    right: '-20px',
+    top:'10px',
+    backgroundColor: '#427AFB',
+    height: '20px',
+    lineHeight: '20px',
+    textAlign: 'center',
+    color: '#FFF',
+    width: '100%',
+    transform:'rotate(40deg)',
+    fontSize: '1em',
+  }
+}
 
 export default class Tag extends React.Component {
   static propTypes = {
@@ -20,14 +40,12 @@ export default class Tag extends React.Component {
   render() {
     const { text, width, height, style } = this.props
 
-    const areaStyle = {
-      width,
-      height,
-    }
+    styles.area.width = width
+    styles.area.height = height
 
     return (
-      <div className={'area'} style={areaStyle}>
-        <div className={'discount'} style={style}>{text}</div>
+      <div style={styles.area}>
+        <div style={styles.discount}>{text}</div>
       </div>
     )
   }
