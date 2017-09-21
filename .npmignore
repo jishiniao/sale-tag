@@ -3,7 +3,7 @@
 /config
 /build
 
-server.js
+dev-server.js
 yarn.lock
 yarn-error.log
 
