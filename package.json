@@ -6,6 +6,10 @@
   "repository": "git@github.com:jishiniao/sale-tag.git",
   "author": "yangkang",
   "license": "MIT",
+  "files": [
+    "lib",
+    "assets/*.css"
+  ],
   "scripts": {
     "dev:server": "node dev-server.js",
     "lib:clean": "rm ./lib/*",
