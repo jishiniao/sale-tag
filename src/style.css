@@ -1,10 +1,11 @@
-.area {
+.sale-tag-area {
   position: absolute;
   right:-1px;
   top: -1px;
   overflow: hidden;
 }
-.discount {
+
+.sale-tag-discount {
   position: absolute;
   right: -20px;
   top:10px;
