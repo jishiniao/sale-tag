@@ -1,6 +1,6 @@
 {
   "name": "sale-tag",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "use it, make sure support css3 transform",
   "main": "./lib/index.js",
   "repository": "git@github.com:jishiniao/sale-tag.git",
