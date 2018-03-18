@@ -8,8 +8,7 @@
   "license": "MIT",
   "scripts": {
     "dev:server": "node dev-server.js",
-    "lib:clean": "rm ./lib/*",
-    "prepare": "babel src -d lib"
+    "prepare": "rm ./lib/* && babel src -d lib"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.4",

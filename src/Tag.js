@@ -1,6 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+const cssArea = {
+  position: 'absolute',
+  right:'-1px',
+  top: '-1px',
+  overflow: 'hidden',
+}
+
+const cssDiscount = {
+  position: 'absolute',
+  right: '-20px',
+  top:'10px',
+  backgroundColor: '#427AFB',
+  height: '20px',
+  lineHeight: '20px',
+  textAlign: 'center',
+  color: '#FFF',
+  width: '100%',
+  transform:'rotate(40deg)',
+  fontSize: '1em',
+}
+
 export default class Tag extends React.Component {
   static propTypes = {
     text: PropTypes.string.isRequired,
@@ -21,19 +42,22 @@ export default class Tag extends React.Component {
     const { text, width, height, style, disable } = this.props
 
     const areaStyle = {
+      ...cssArea,
       width,
       height,
     }
 
-    const disCountStyle = {}
+    const disCountStyle = {
+      ...cssDiscount,
+    }
 
     if(disable) {
       disCountStyle.backgroundColor = '#DDD'
     }
 
     return (
-      <div className='sale-tag-area' style={areaStyle}>
-        <div className='sale-tag-discount' style={disCountStyle}>{text}</div>
+      <div style={areaStyle}>
+        <div style={disCountStyle}>{text}</div>
       </div>
     )
   }
