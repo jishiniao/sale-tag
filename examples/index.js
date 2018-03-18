@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-// import '../src/style.css'
+import '../src/style.css'
 import Tag, { TagStyle } from '../src/index'
 
 class App extends React.Component {
