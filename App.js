@@ -1,8 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import '../src/style.css'
-import Tag, { TagStyle } from '../src/index'
+import Tag, { TagStyle } from './src/index'
 
 class App extends React.Component {
   constructor(props) {
@@ -21,9 +20,5 @@ class App extends React.Component {
 
 ReactDOM.render(
   <App />,
-  document.getElementById('root')
+  document.getElementById('app')
 )
-
-if (module.hot) {
-  module.hot.accept()
-}
