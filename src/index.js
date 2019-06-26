@@ -1,3 +1,7 @@
-import Tag from './Tag'
+import {
+  Tag
+} from './Tag2'
 
-export default Tag
+export {
+  Tag
+}

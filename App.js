@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Tag, { TagStyle } from './src/index'
+import {
+  Tag
+} from './src'
 
 class App extends React.Component {
   constructor(props) {
